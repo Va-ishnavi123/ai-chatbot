@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #263e48;
+
+    /* background-color: #787d80; */
+
+    /* background-color: #6098ad; */
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo::before {
+    font-size: 1.5em;
+    margin-right: 10px;
+
+}
+
+/* Degree Selection */
+.degree-selection {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.degree-selection button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f8f191;
+    color: black;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* College Selection */
+.college-selection {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.college-selection button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #bb7be6;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Language Selection */
+.language-selection, .query-selection, .default-queries {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.language-selection button, .query-selection button, .default-queries button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4cb560;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+.default-queries button{
+    background-color: rgb(226, 118, 71);
+    color: black;
+}
+
+/* Chat Content */
+.chat-content {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-message, .bot-message {
+    max-width: 80%;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-message {
+    background-color: #cfe9ff;
+    align-self: flex-start;
+}
+
+.bot-message {
+    background-color: #e2e3e5;
+    align-self: flex-start;
+}
+
+/* History */
+.history {
+    background-color: #263e48;
+    border-top: 1px solid #ddd;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.history h2 {
+    margin-top: 0;
+}
+
+#history-list {
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+
+#history-list li {
+    padding: 5px 0;
+}
+
+/* Input */
+#query-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Buttons */
+button:focus {
+    outline: none;
+}
+img{
+    padding-right: 10px;
+}
+button{
+    background-color: rgb(239, 244, 246);
+}
+#up{
+    background-color: #efefed;
+}
+/* #polytechnicColleges{
+display: flex;
+back} */
+.college-selection button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}

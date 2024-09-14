@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduChatbot</title>
+    <link rel="stylesheet" href="ai.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="navbar">
+            <div class="logo">EduChatbot</div>
+            <div class="login-status" id="login-status">&#128274;</div>
+        </div> -->
+<div id="up">
+    <div class="navbar">
+        <!-- Smiling Cute Robot Chat Bot Logo -->
+        <div class="logo">
+            <img src="iconn.png.png" alt="Smiling Cute Robot Chat Bot Logo" width=70px height=70px class="logo-image">
+            EduChatbot
+        </div>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+
+        <!-- <div class="login-status" id="login-status">&#128274;</div> -->
+    </div>
+
+    
+    <div class="degree-selection">
+        <button onclick="showSubcollegeOptions('engineering')">Engineering</button>
+        <button onclick="showSubcollegeOptions('polytechnic')">Polytechnic</button>
+    </div>
+    
+    <div id="engineeringColleges" class="college-selection" style="display: none;">
+        <button onclick="selectSubCollege('Malaviya National Institute of Technology (MNIT), Jaipur')">Malaviya National Institute of Technology (MNIT), Jaipur</button>
+        <button onclick="selectSubCollege('Indian Institute of Technology (IIT), Jodhpur')">Indian Institute of Technology (IIT), Jodhpur</button>
+        <button onclick="selectSubCollege('Birla Institute of Technology and Science (BITS), Pilani')">Birla Institute of Technology and Science (BITS), Pilani</button>
+        <button onclick="selectSubCollege('The LNM Institute of Information Technology (LNMIIT), Jaipur')">The LNM Institute of Information Technology (LNMIIT), Jaipur</button>
+        <button onclick="selectSubCollege('Rajasthan Technical University (RTU), Kota')">Rajasthan Technical University (RTU), Kota*</button>
+
+    </div>
+    
+    <div id="polytechnicColleges" class="college-selection" style="display: none;">
+        <button onclick="selectSubCollege('Government Polytechnic College, Jodhpur')">Government Polytechnic College, Jodhpur</button>
+        <button onclick="selectSubCollege('Government Polytechnic College, Kota ')">Government Polytechnic College, Kota</button>
+        <button onclick="selectSubCollege('Arya College of Engineering & Research Centre, Jaipur (Polytechnic)')">Arya College of Engineering & Research Centre, Jaipur (Polytechnic)</button>
+        <button onclick="selectSubCollege('Government Women Polytechnic College, Jaipur')">Government Women Polytechnic College, Jaipur</button>
+        <button onclick="selectSubCollege('Poornima Group of Colleges, Jaipur (Polytechnic)')">Poornima Group of Colleges, Jaipur (Polytechnic)</button>
+
+    </div>
+    
+    <div id="language-selection" class="language-selection" style="display: none;">
+        <button onclick="selectLanguage('hindi')">Hindi</button>
+        <button onclick="selectLanguage('english')">English</button>
+    </div>
+    
+    <div id="query-selection" class="query-selection" style="display: none;">
+        <input type="text" id="query-input" placeholder="Ask your question here...">
+        <button onclick="submitQuery()">Submit</button>
+    </div>
+    
+    <div id="default-queries" class="default-queries" style="display: none;">
+        <button onclick="handleQuerySelection('fees')">Fees</button>
+        <button onclick="handleQuerySelection('scholarships')">Scholarships</button>
+        <button onclick="handleQuerySelection('admission')">Admission</button>
+        <button onclick="handleQuerySelection('hostel')">Hostel Facilities</button>
+        <button onclick="handleQuerySelection('placement')">Placement</button>
+    </div>
+    
+
+</div>
+        <div id="chat-content" class="chat-content"></div>
+        
+        <div id="history" class="history">
+            <h2>Search History</h2>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="ai.js"></script>
+</body>
+</html>
